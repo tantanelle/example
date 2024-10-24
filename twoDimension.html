@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NxN Array Operations</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>NxN Array Operations (N = 5)</h1>
+
+    <!-- Display NxN array -->
+    <h2>The NxN Array</h2>
+    <table>
+        <tr>
+            <td>24</td>
+            <td>67</td>
+            <td>45</td>
+            <td>91</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>56</td>
+            <td>23</td>
+            <td>89</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>77</td>
+            <td>92</td>
+            <td>48</td>
+            <td>66</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td>29</td>
+            <td>38</td>
+            <td>80</td>
+            <td>54</td>
+        </tr>
+        <tr>
+            <td>85</td>
+            <td>42</td>
+            <td>13</td>
+            <td>19</td>
+            <td>75</td>
+        </tr>
+    </table>
+
+    <!-- Display row and column sums and averages -->
+    <h2>Row and Column Sums and Averages</h2>
+    <table>
+        <tr>
+            <th>Row</th>
+            <th>Sum</th>
+            <th>Average</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>309</td>
+            <td>61.8</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>209</td>
+            <td>41.8</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>318</td>
+            <td>63.6</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>273</td>
+            <td>54.6</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>234</td>
+            <td>46.8</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Column</th>
+            <th>Sum</th>
+            <th>Average</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>226</td>
+            <td>45.2</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>271</td>
+            <td>54.2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>211</td>
+            <td>42.2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>327</td>
+            <td>65.4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>308</td>
+            <td>61.6</td>
+        </tr>
+    </table>
+
+    <!-- Display diagonal sums and averages -->
+    <h2>Diagonal Sums and Averages</h2>
+    <p><strong>Primary Diagonal Sum:</strong> 217</p>
+    <p><strong>Primary Diagonal Average:</strong> 43.4</p>
+    <p><strong>Secondary Diagonal Sum:</strong> 282</p>
+    <p><strong>Secondary Diagonal Average:</strong> 56.4</p>
+
+    <!-- Display smallest and largest values -->
+    <h2>Smallest and Largest Values in Rows and Columns</h2>
+    <table>
+        <tr>
+            <th>Row</th>
+            <th>Smallest</th>
+            <th>Largest</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>24</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>35</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>29</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>13</td>
+            <td>85</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Column</th>
+            <th>Smallest</th>
+            <th>Largest</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>29</td>
+            <td>77</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>13</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>19</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>31</td>
+            <td>82</td>
+        </tr>
+    </table>
+
+    <!-- Display overall smallest, largest, sum, and average -->
+    <h2>Overall Statistics</h2>
+    <p><strong>Overall Sum:</strong> 1343</p>
+    <p><strong>Overall Average:</strong> 53.72</p>
+    <p><strong>Overall Smallest Number:</strong> 10</p>
+    <p><strong>Overall Largest Number:</strong> 92</p>
+
+    <a href="javascript:void(0);" onclick="closeAndGoBack()">Back to Main Page</a>
+
+    <script>
+        function closeAndGoBack() {
+            window.close();
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

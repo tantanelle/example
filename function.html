@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <style>
+        table {
+            width: 75%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inventory Management System</h1>
+
+    <!-- Current Inventory -->
+    <h2>Current Inventory</h2>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price (₱)</th>
+            <th>Quantity</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>₱55.00</td>
+            <td>100</td>
+            <td>Fruit</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>₱25.00</td>
+            <td>200</td>
+            <td>Fruit</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>₱60.00</td>
+            <td>80</td>
+            <td>Fruit</td>
+        </tr>
+        <tr>
+            <td>Shampoo</td>
+            <td>₱250.00</td>
+            <td>20</td>
+            <td>Personal Care</td>
+        </tr>
+        <tr>
+            <td>Toothpaste</td>
+            <td>₱100.00</td>
+            <td>30</td>
+            <td>Personal Care</td>
+        </tr>
+    </table>
+
+    <!-- Total Value of Inventory -->
+    <h2>Total Value of Inventory</h2>
+    <p>Total Value: ₱18,600.00</p>
+
+    <!-- Inventory Sorted by Price -->
+    <h2>Inventory Sorted by Price</h2>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price (₱)</th>
+            <th>Quantity</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>₱25.00</td>
+            <td>200</td>
+            <td>Fruit</td>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>₱55.00</td>
+            <td>100</td>
+            <td>Fruit</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>₱60.00</td>
+            <td>80</td>
+            <td>Fruit</td>
+        </tr>
+        <tr>
+            <td>Toothpaste</td>
+            <td>₱100.00</td>
+            <td>30</td>
+            <td>Personal Care</td>
+        </tr>
+        <tr>
+            <td>Shampoo</td>
+            <td>₱250.00</td>
+            <td>20</td>
+            <td>Personal Care</td>
+        </tr>
+    </table>
+
+    <!-- Filtered Items: Category: Fruit -->
+    <h2>Filtered Items: Category: Fruit</h2>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price (₱)</th>
+            <th>Quantity</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>₱55.00</td>
+            <td>100</td>
+            <td>Fruit</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>₱25.00</td>
+            <td>200</td>
+            <td>Fruit</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>₱60.00</td>
+            <td>80</td>
+            <td>Fruit</td>
+        </tr>
+    </table>
+
+    <!-- Most Expensive Item -->
+    <h2>Most Expensive Item</h2>
+    <p>Item: Shampoo <br> Price: ₱250.00</p>
+
+    <!-- Least Expensive Item -->
+    <h2>Least Expensive Item</h2>
+    <p>Item: Banana <br> Price: ₱25.00</p>
+
+    <a href="javascript:void(0);" onclick="closeAndGoBack()">Back to Main Page</a>
+
+<script>
+    function closeAndGoBack() {
+        window.close(); 
+        window.location.href = "index.html";
+    }
+</script>
+
+</body>
+</html>
